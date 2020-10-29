@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<link th:href="@{/css/bootstrap.css}" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<h2 style="text-align: center; color: red" class="mt-5 mb-3">Pets
+			available for adoption in your area</h2>
+		<div
+			class="d-flex flex-row align-items-center justify-content-between mb-4">
+			<table class="table table-hover" id="pets-table">
+				<thead>
+					<tr>
+						<th>Pet Id</th>
+						<th>Pet Name</th>
+						<th>Shelter Email</th>
+						<th>Shelter Address</th>
+						<th>Pet Image</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" th:src="@{/js/bootstrap.bundle.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/main.js}"></script>
+</html>
